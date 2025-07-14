@@ -1,0 +1,11 @@
+# Subdomain: cutefonts.fancyletters.org
+/subdomain/cutefonts/*  /subdomain/cutefonts/index.html  200  Host=cutefonts.fancyletters.org
+
+# Subdomain: tattoofonts.fancyletters.org
+/subdomain/tattoofonts/*  /subdomain/tattoofonts/index.html  200  Host=tattoofonts.fancyletters.org
+
+# Force www version
+/*  https://www.fancyletters.org/:splat  301!  Host=fancyletters.org
+
+# Optional fallback for unknown paths on www
+/*  /index.html  404  Host=www.fancyletters.org

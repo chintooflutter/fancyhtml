@@ -4,16 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aesthetic Fonts Generator | FancyLetters.org</title>
-  <meta name="description" content="Generate 20+ beautiful aesthetic font styles with our free text converter. Copy & paste aesthetic fonts instantly for social media, bios, captions & more!">
-  <meta name="keywords" content="aesthetic fonts, fancy letters, cute text, aesthetic font generator, stylish text, copy paste fonts">
-  <link rel="canonical" href="https://www.fancyletters.org/aesthetic-fonts/" />
+  <title>Tattoo Fonts Generator | FancyLetters.org</title>
+  <meta name="description" content="Generate 20+ bold and stylish tattoo fonts. Copy and paste unique tattoo lettering for your design inspirations. Free tattoo font generator online!">
+  <meta name="keywords" content="tattoo fonts, tattoo text generator, tattoo font styles, tattoo lettering, fancy tattoo fonts">
+  <link rel="canonical" href="https://tattoofonts.fancyletters.org/" />
   <link rel="stylesheet" href="/assets/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-white text-gray-800">
   <header class="bg-white shadow sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
@@ -50,13 +50,13 @@
   </script>
 
   <main class="max-w-3xl mx-auto px-4 py-8">
-    <h1 class="text-3xl sm:text-4xl font-bold text-center mb-4">🌸 Aesthetic Fonts Generator</h1>
+    <h1 class="text-3xl sm:text-4xl font-bold text-center mb-4">🖋️ Tattoo Fonts Generator</h1>
     <p class="text-center text-base sm:text-lg text-gray-600 mb-8">
-      Type your text to preview 20 aesthetic font styles. Tap to copy!
+      Get inspired with 20 bold and artistic tattoo fonts below.
     </p>
     <div class="mb-8">
-      <input type="text" id="userInput" placeholder="Enter your aesthetic text..."
-        class="w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-pink-400 focus:outline-none text-base sm:text-lg"
+      <input type="text" id="userInput" placeholder="Type your tattoo text..."
+        class="w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-gray-600 focus:outline-none text-base sm:text-lg"
         oninput="updatePreview()" />
     </div>
     <div id="previewList" class="space-y-4"></div>
@@ -76,7 +76,8 @@
       <div>
         <h3 class="font-semibold text-gray-800 mb-2">Font Generators</h3>
         <ul class="space-y-1">
-          <li><a href="/aesthetic-fonts/">Aesthetic Fonts</a></li>
+          <li><a href="https://cutefonts.fancyletters.org/">Cute Fonts</a></li>
+          <li><a href="https://tattoofonts.fancyletters.org/">Tattoo Fonts</a></li>
         </ul>
       </div>
       <div>
@@ -88,51 +89,57 @@
 
   <script>
     const fontStyles = [
-      { name: "Style 1", transform: (t) => t.replace(/a/g, "𝒶").replace(/e/g, "ℯ").replace(/t/g, "𝓉") },
-      { name: "Style 2", transform: (t) => t.replace(/./g, c => `${c}̾`) },
-      { name: "Style 3", transform: (t) => `🌸 ${t} 🌸` },
-      { name: "Style 4", transform: (t) => t.split('').reverse().join('') },
-      { name: "Style 5", transform: (t) => [...t].map(c => c + '͎').join('') },
-      { name: "Style 6", transform: (t) => `❀${t.split('').join('✿')}❀` },
-      { name: "Style 7", transform: (t) => [...t].map(c => c + '̴').join('') },
-      { name: "Style 8", transform: (t) => `꧁${t}꧂` },
-      { name: "Style 9", transform: (t) => `•°${t}°•` },
-      { name: "Style 10", transform: (t) => `♡ ${t.split('').join(' ♡ ')} ♡` },
-      { name: "Style 11", transform: (t) => t.toUpperCase() },
-      { name: "Style 12", transform: (t) => `『${t}』` },
-      { name: "Style 13", transform: (t) => [...t].map(c => `🄰🅂🅃`.includes(c.toUpperCase()) ? c : c + '͜').join('') },
-      { name: "Style 14", transform: (t) => t.replace(/a/g, "α").replace(/e/g, "є").replace(/t/g, "т") },
-      { name: "Style 15", transform: (t) => t + " 💫" },
-      { name: "Style 16", transform: (t) => [...t].map(c => c + '͓̽').join('') },
-      { name: "Style 17", transform: (t) => [...t].map(c => `🅰🅱🅲🅳🅴🅵🅶`.includes(c.toUpperCase()) ? c : `🅧`).join('') },
-      { name: "Style 18", transform: (t) => `✿ ${t.toLowerCase()} ✿` },
-      { name: "Style 19", transform: (t) => `✨${t.split('').join(' ')}✨` },
-      { name: "Style 20", transform: (t) => t.replace(/[aeiou]/gi, m => m.toUpperCase()) },
+      { name: "1", transform: (t) => `🖋 ${t} 🖋` },
+      { name: "2", transform: (t) => `➶ ${t.toUpperCase()} ➷` },
+      { name: "3", transform: (t) => t.replace(/[aeiou]/gi, m => m.toUpperCase()) + " ✒️" },
+      { name: "4", transform: (t) => `⫷ ${t.split('').join('⫸')} ⫷` },
+      { name: "5", transform: (t) => [...t].map(c => `${c}̴`).join('') },
+      { name: "6", transform: (t) => `✠${t}✠` },
+      { name: "7", transform: (t) => `『${t}』` },
+      { name: "8", transform: (t) => `♰ ${t} ♰` },
+      { name: "9", transform: (t) => `⚓ ${t.toLowerCase()} ⚓` },
+      { name: "10", transform: (t) => `𝓣𝓐𝓣𝓣𝓞𝓞: ${t}` },
+      { name: "11", transform: (t) => t.toUpperCase() + " ☠" },
+      { name: "12", transform: (t) => `☛ ${t.split('').reverse().join('')} ☚` },
+      { name: "13", transform: (t) => `✍ ${t} ✍` },
+      { name: "14", transform: (t) => [...t].map(c => c + '͟').join('') },
+      { name: "15", transform: (t) => `⟦${t}⟧` },
+      { name: "16", transform: (t) => `⚔ ${t} ⚔` },
+      { name: "17", transform: (t) => `✞ ${t.split('').join(' ')} ✞` },
+      { name: "18", transform: (t) => `💀 ${t.toLowerCase()} 💀` },
+      { name: "19", transform: (t) => `『 ${t.toUpperCase()} 』` },
+      { name: "20", transform: (t) => `⸸ ${t.split('').join('')} ⸸` },
     ];
 
     function updatePreview() {
-      const input = document.getElementById("userInput").value || "aesthetic text";
+      const input = document.getElementById("userInput").value || "tattoofonts";
       const container = document.getElementById("previewList");
       container.innerHTML = "";
+
       fontStyles.forEach(({ name, transform }) => {
         const transformed = transform(input);
+
         const row = document.createElement("div");
         row.className = "flex flex-col sm:flex-row justify-between items-start sm:items-center bg-white rounded-xl shadow px-4 py-3 gap-3 sm:gap-6";
+
         const preview = document.createElement("div");
         preview.className = "text-base sm:text-lg break-words max-w-full flex-1 font-mono";
         preview.textContent = transformed;
+
         const btn = document.createElement("button");
-        btn.className = "text-sm bg-pink-500 hover:bg-pink-600 text-white px-4 py-1.5 rounded-lg transition";
+        btn.className = "text-sm bg-gray-800 hover:bg-black text-white px-4 py-1.5 rounded-lg transition";
         btn.textContent = "Copy";
         btn.onclick = () => {
           navigator.clipboard.writeText(transformed);
           btn.textContent = "Copied!";
           setTimeout(() => (btn.textContent = "Copy"), 1500);
         };
+
         row.append(preview, btn);
         container.appendChild(row);
       });
     }
+
     updatePreview();
   </script>
 </body>
