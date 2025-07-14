@@ -1,6 +1,8 @@
 {
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20250712.0",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
     "tailwindcss": "^4.1.11"
   },
   "name": "fancyhtml",
@@ -8,7 +10,9 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./src/input.css -o ./assets/style.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./assets/style.css --watch"
   },
   "keywords": [],
   "author": "",
