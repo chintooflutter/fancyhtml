@@ -1,0 +1,5 @@
+name = "fancyletters"
+account_id = "d5dfe9d26a883968d1fbdfec8c207cd4"
+workers_dev = true
+main = "src/index.ts"
+compatibility_date = "2025-07-14"

@@ -1,0 +1,6 @@
+/* Add styles here */
+@import "tailwindcss";
+
+body {
+    @apply font-sans;
+  }

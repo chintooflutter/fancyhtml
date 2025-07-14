@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fancy Letters Generator 2025</title>
+
+  <!-- Tailwind CLI Output CSS -->
+  <link rel="stylesheet" href="/assets/styles.css" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- header.html will be injected here -->
+
+  <main class="max-w-3xl mx-auto px-4 py-8">
+    <h1 class="text-3xl sm:text-4xl font-bold text-center mb-4">✨ Fancy Letters Generator</h1>
+    <p class="text-center text-base sm:text-lg text-gray-600 mb-8">
+      Type your text and explore 20 unique font styles below. Tap to copy!
+    </p>
+
+    <!-- Input Box -->
+    <div class="mb-8">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Enter your text..."
+        class="w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none text-base sm:text-lg"
+        oninput="updatePreview()"
+      />
+    </div>
+
+    <!-- Font Preview List -->
+    <div id="previewList" class="space-y-4">
+      <!-- Filled by JS -->
+    </div>
+  </main>
+
+  <!-- footer.html will be injected here -->
+
+  <script>
+    const fontStyles = [
+      { name: "Style 1", transform: (t) => t.toUpperCase() },
+      { name: "Style 2", transform: (t) => [...t].map(c => c + '̶').join('') },
+      { name: "Style 3", transform: (t) => [...t].map(c => c + '͟').join('') },
+      { name: "Style 4", transform: (t) => "★ " + t + " ★" },
+      { name: "Style 5", transform: (t) => "✧" + t.split('').join('✧') + "✧" },
+      { name: "Style 6", transform: (t) => t.split('').reverse().join('') },            
+      { name: "Style 9", transform: (t) => t + "™" },
+      { name: "Style 10", transform: (t) => "【" + t + "】" },
+      { name: "Style 11", transform: (t) => "꧁" + t + "꧂" },      
+      { name: "Style 13", transform: (t) => [...t].map(c => c + '͜').join('') },
+      { name: "Style 14", transform: (t) => t.toLowerCase() },
+      { name: "Style 15", transform: (t) => [...t].map(c => c + '̾').join('') },
+      { name: "Style 16", transform: (t) => "🌸" + t + "🌸" },
+      { name: "Style 17", transform: (t) => "💖" + t.split('').join(' ') + "💖" },
+      { name: "Style 18", transform: (t) => "☾" + t + "☽" },
+      { name: "Style 19", transform: (t) => t + " 💫" },
+      { name: "Style 20", transform: (t) => t.replace(/[a-z]/gi, c => c.toUpperCase() + c.toLowerCase()) }
+    ];
+
+    function updatePreview() {
+      const input = document.getElementById("userInput").value || "Fancy Text";
+      const container = document.getElementById("previewList");
+      container.innerHTML = ""; // clear previous previews
+
+      fontStyles.forEach(({ name, transform }) => {
+        const transformed = transform(input);
+
+        const row = document.createElement("div");
+        row.className = "flex flex-col sm:flex-row justify-between items-start sm:items-center bg-white rounded-xl shadow px-4 py-3 gap-3 sm:gap-6";
+
+        const preview = document.createElement("div");
+        preview.className = "text-base sm:text-lg break-words max-w-full flex-1";
+        preview.textContent = transformed;
+
+        const btn = document.createElement("button");
+        btn.className = "text-sm bg-blue-600 hover:bg-blue-700 text-white px-4 py-1.5 rounded-lg transition";
+        btn.textContent = "Copy";
+        btn.onclick = () => {
+          navigator.clipboard.writeText(transformed);
+          btn.textContent = "Copied!";
+          setTimeout(() => (btn.textContent = "Copy"), 1500);
+        };
+
+        row.append(preview, btn);
+        container.appendChild(row);
+      });
+    }
+
+    // Load default preview
+    updatePreview();
+  </script>
+</body>
+</html>
