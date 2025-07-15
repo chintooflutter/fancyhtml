@@ -5,28 +5,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tattoo Font Generator 2025, 20+ Free Tattoo Fonts</title>
-  <meta name="description" content="Generate bold, script, and lettering styles with our free Tattoo Fonts Generator 2025. Explore 20+ unique tattoo fonts and copy your design instantly.">
-  <meta name="keywords" content="tattoo fonts, tattoo font generator, tattoo lettering fonts, name tattoo fonts, fonts for tattoos, tattoo design font generator, free tattoo fonts">
+  <meta name="description"
+    content="Generate bold, script, and lettering styles with our free Tattoo Fonts Generator 2025. Explore 20+ unique tattoo fonts and copy your design instantly.">
+  <meta name="keywords"
+    content="tattoo fonts, tattoo font generator, tattoo lettering fonts, name tattoo fonts, fonts for tattoos, tattoo design font generator, free tattoo fonts">
   <link rel="canonical" href="https://tattoofonts.fancyletters.org/" />
   <link rel="icon" type="image/x-icon" href="https://www.fancyletters.org/assets/favicon.ico" />
   <link rel="preload" as="style" href="https://www.fancyletters.org/assets/style.css" />
   <link rel="stylesheet" href="https://www.fancyletters.org/assets/style.css" />
-
-  <!-- Optimized Google Fonts load -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <noscript>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
-  </noscript>
-
-  <style>
-    h1 {
-      font-family: 'Sora', system-ui, sans-serif;
-      font-weight: 700;
-      font-display: swap;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="bg-white text-gray-800">
@@ -45,7 +32,8 @@
           <a href="https://www.fancyletters.org/contact/" class="text-gray-600 hover:text-black text-sm">Contact</a>
         </nav>
         <div class="md:hidden">
-          <button id="menu-toggle" aria-label="Toggle mobile menu" class="text-gray-600 hover:text-black focus:outline-none">
+          <button id="menu-toggle" aria-label="Toggle mobile menu"
+            class="text-gray-600 hover:text-black focus:outline-none">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -59,12 +47,6 @@
       <a href="https://www.fancyletters.org/contact/" class="block text-gray-600 hover:text-black text-sm">Contact</a>
     </nav>
   </header>
-
-  <script>
-    document.getElementById("menu-toggle").addEventListener("click", function () {
-      document.getElementById("mobile-menu").classList.toggle("hidden");
-    });
-  </script>
 
   <main class="max-w-3xl mx-auto px-4 py-8">
     <h1 class="text-3xl sm:text-4xl font-bold text-center mb-4">Tattoo Font Generator 2025, 20+ Free Tattoo Fonts</h1>
@@ -93,13 +75,15 @@
       <div>
         <h3 class="font-semibold text-gray-800 mb-2">Font Generators</h3>
         <ul class="space-y-1">
+          <li><a href="https://www.fancyletters.org/aesthetic-fonts/">Aesthetic Fonts</a></li>
           <li><a href="https://cutefonts.fancyletters.org/">Cute Fonts</a></li>
           <li><a href="https://tattoofonts.fancyletters.org/">Tattoo Fonts</a></li>
+          <li><a href="https://cursivefonts.fancyletters.org/">Cursive Fonts</a></li>
         </ul>
       </div>
       <div>
         <h3 class="font-semibold text-gray-800 mb-2">Follow Us</h3>
-        <a href="https://www.instagram.com/fancyletters_org/" target="_blank">Instagram</a>
+        <a href="https://www.instagram.com/fancyletters_org/" target="_blank" rel="noopener">Instagram</a>
       </div>
     </div>
   </footer>
@@ -156,6 +140,10 @@
         container.appendChild(row);
       });
     }
+
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
 
     updatePreview();
   </script>
