@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cursive Fonts Generator | FancyLetters.org</title>
+  <meta name="description"
+    content="Generate 20 elegant cursive fonts instantly. Copy and paste stylish script and handwritten text for your Instagram bio, design, or posts.">
+  <meta name="keywords" content="cursive fonts, script text, cursive generator, handwritten font, copy paste cursive">
+  <link rel="canonical" href="https://cursivefonts.fancyletters.org/" />
+  <link rel="icon" type="image/x-icon" href="https://www.fancyletters.org/assets/favicon.ico" />
+  <link rel="stylesheet" href="https://www.fancyletters.org/assets/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-800">
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex-shrink-0 text-xl font-bold">
+          <a href="https://www.fancyletters.org/" class="flex items-center space-x-1">
+            <span class="text-black">FancyLetters</span>
+            <span class="text-red-600">.org</span>
+          </a>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="https://www.fancyletters.org/about/" class="text-gray-600 hover:text-black text-sm">About</a>
+          <a href="https://www.fancyletters.org/privacy/" class="text-gray-600 hover:text-black text-sm">Privacy</a>
+          <a href="https://www.fancyletters.org/contact/" class="text-gray-600 hover:text-black text-sm">Contact</a>
+        </nav>
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-gray-600 hover:text-black focus:outline-none" aria-label="Toggle Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <nav id="mobile-menu" class="hidden md:hidden flex-col space-y-2 px-4 pb-4">
+      <a href="https://www.fancyletters.org/about/" class="block text-gray-600 hover:text-black text-sm">About</a>
+      <a href="https://www.fancyletters.org/privacy/" class="block text-gray-600 hover:text-black text-sm">Privacy</a>
+      <a href="https://www.fancyletters.org/contact/" class="block text-gray-600 hover:text-black text-sm">Contact</a>
+    </nav>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 py-8">
+    <h1 class="text-3xl sm:text-4xl font-bold text-center mb-4">Cursive Fonts Generator</h1>
+    <p class="text-center text-base sm:text-lg text-gray-600 mb-8">
+      Explore 20 flowing cursive styles and copy the one you love ✍️
+    </p>
+    <div class="mb-8">
+      <input type="text" id="userInput" placeholder="Type something in cursive..."
+        class="w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-blue-400 focus:outline-none text-base sm:text-lg"
+        oninput="updatePreview()" />
+    </div>
+    <div id="previewList" class="space-y-4"></div>
+  </main>
+
+  <footer class="bg-gray-100 mt-12 p-6 text-sm text-gray-600">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <div>
+        <h3 class="font-semibold text-gray-800 mb-2">Pages</h3>
+        <ul class="space-y-1">
+          <li><a href="https://www.fancyletters.org/about/">About</a></li>
+          <li><a href="https://www.fancyletters.org/privacy/">Privacy</a></li>
+          <li><a href="https://www.fancyletters.org/contact/">Contact</a></li>
+          <li><a href="https://www.fancyletters.org/disclaimer/">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-gray-800 mb-2">Font Generators</h3>
+        <ul class="space-y-1">
+          <li><a href="https://cutefonts.fancyletters.org/">Cute Fonts</a></li>
+          <li><a href="https://tattoofonts.fancyletters.org/">Tattoo Fonts</a></li>
+          <li><a href="https://cursivefonts.fancyletters.org/">Cursive Fonts</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-gray-800 mb-2">Follow Us</h3>
+        <a href="https://www.instagram.com/fancyletters_org/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const fontStyles = [
+      // Style 1 (already implemented)
+      {
+        name: "1",
+        transform: (t) => {
+          const scriptChars = [
+            '𝒶', '𝒷', '𝒸', '𝒹', '𝑒', '𝒻', '𝑔', '𝒽', '𝒾', '𝒿',
+            '𝓀', '𝓁', '𝓂', '𝓃', '𝑜', '𝓅', '𝓆', '𝓇', '𝓈', '𝓉',
+            '𝓊', '𝓋', '𝓌', '𝓍', '𝓎', '𝓏'
+          ];
+          return [...t].map(c => {
+            const i = 'abcdefghijklmnopqrstuvwxyz'.indexOf(c.toLowerCase());
+            return i !== -1 ? scriptChars[i] : c;
+          }).join('');
+        }
+      },
+
+      // Style 2 – Fraktur-like cursive
+      {
+        name: "2",
+        transform: (t) => {
+          const frakturChars = [
+            '𝔞', '𝔟', '𝔠', '𝔡', '𝔢', '𝔣', '𝔤', '𝔥', '𝔦', '𝔧',
+            '𝔨', '𝔩', '𝔪', '𝔫', '𝔬', '𝔭', '𝔮', '𝔯', '𝔰', '𝔱',
+            '𝔲', '𝔳', '𝔴', '𝔵', '𝔶', '𝔷'
+          ];
+          return [...t].map(c => {
+            const i = 'abcdefghijklmnopqrstuvwxyz'.indexOf(c.toLowerCase());
+            return i !== -1 ? frakturChars[i] : c;
+          }).join('');
+        }
+      },
+
+      // Style 3 – Bold script
+      {
+        name: "3",
+        transform: (t) => {
+          const boldScript = [
+            '𝓪', '𝓫', '𝓬', '𝓭', '𝓮', '𝓯', '𝓰', '𝓱', '𝓲', '𝓳',
+            '𝓴', '𝓵', '𝓶', '𝓷', '𝓸', '𝓹', '𝓺', '𝓻', '𝓼', '𝓽',
+            '𝓾', '𝓿', '𝔀', '𝔁', '𝔂', '𝔃'
+          ];
+          return [...t].map(c => {
+            const i = 'abcdefghijklmnopqrstuvwxyz'.indexOf(c.toLowerCase());
+            return i !== -1 ? boldScript[i] : c;
+          }).join('');
+        }
+      },
+
+      // Style 4 – Monospace cursive illusion
+      {
+        name: "4",
+        transform: (t) => {
+          const monoItalic = [
+            '𝚊', '𝚋', '𝚌', '𝚍', '𝚎', '𝚏', '𝚐', '𝚑', '𝚒', '𝚓',
+            '𝚔', '𝚕', '𝚖', '𝚗', '𝚘', '𝚙', '𝚚', '𝚛', '𝚜', '𝚝',
+            '𝚞', '𝚟', '𝚠', '𝚡', '𝚢', '𝚣'
+          ];
+          return [...t].map(c => {
+            const i = 'abcdefghijklmnopqrstuvwxyz'.indexOf(c.toLowerCase());
+            return i !== -1 ? monoItalic[i] : c;
+          }).join('');
+        }
+      },
+
+      // Style 5 – Double-struck cursive mix
+      {
+        name: "5",
+        transform: (t) => {
+          const doubleStruck = [
+            '𝕒', '𝕓', '𝕔', '𝕕', '𝕖', '𝕗', '𝕘', '𝕙', '𝕚', '𝕛',
+            '𝕜', '𝕝', '𝕞', '𝕟', '𝕠', '𝕡', '𝕢', '𝕣', '𝕤', '𝕥',
+            '𝕦', '𝕧', '𝕨', '𝕩', '𝕪', '𝕫'
+          ];
+          return [...t].map(c => {
+            const i = 'abcdefghijklmnopqrstuvwxyz'.indexOf(c.toLowerCase());
+            return i !== -1 ? doubleStruck[i] : c;
+          }).join('');
+        }
+      },
+
+      // Style 6 – Italic serif cursive
+      {
+        name: "6",
+        transform: (t) => {
+          const italicSerif = [
+            '𝑎', '𝑏', '𝑐', '𝑑', '𝑒', '𝑓', '𝑔', 'ℎ', '𝑖', '𝑗',
+            '𝑘', '𝑙', '𝑚', '𝑛', '𝑜', '𝑝', '𝑞', '𝑟', '𝑠', '𝑡',
+            '𝑢', '𝑣', '𝑤', '𝑥', '𝑦', '𝑧'
+          ];
+          return [...t].map(c => {
+            const i = 'abcdefghijklmnopqrstuvwxyz'.indexOf(c.toLowerCase());
+            return i !== -1 ? italicSerif[i] : c;
+          }).join('');
+        }
+      },
+
+      // Style 7 – Parenthesized cursive
+      {
+        name: "7",
+        transform: (t) => [...t].map(c => c === ' ' ? ' ' : `(${c})`).join('')
+      },
+
+      // Style 8 – Wide spacing script
+      {
+        name: "8",
+        transform: (t) => [...t].map(c => c + ' ').join('').trim()
+      },
+
+      // Style 9 – Small caps cursive illusion
+      {
+        name: "9",
+        transform: (t) => {
+          const smallCaps = [
+            'ᴀ', 'ʙ', 'ᴄ', 'ᴅ', 'ᴇ', 'ꜰ', 'ɢ', 'ʜ', 'ɪ', 'ᴊ',
+            'ᴋ', 'ʟ', 'ᴍ', 'ɴ', 'ᴏ', 'ᴘ', 'ǫ', 'ʀ', 's', 'ᴛ',
+            'ᴜ', 'ᴠ', 'ᴡ', 'x', 'ʏ', 'ᴢ'
+          ];
+          return [...t].map(c => {
+            const i = 'abcdefghijklmnopqrstuvwxyz'.indexOf(c.toLowerCase());
+            return i !== -1 ? smallCaps[i] : c;
+          }).join('');
+        }
+      },
+
+      // Style 10 – Fullwidth italic mimic
+      {
+        name: "10",
+        transform: (t) => [...t].map(c => {
+          const i = 'abcdefghijklmnopqrstuvwxyz'.indexOf(c.toLowerCase());
+          return i !== -1 ? String.fromCharCode(0xFF41 + i) : c;
+        }).join('')
+      },
+
+      // Style 11 – Swash-inspired cursive (adds curls at the ends)
+      {
+        name: "11",
+        transform: (t) => `~${[...t].join('~')}~`
+      },
+
+      // Style 12 – Curly bracket wrap
+      {
+        name: "12",
+        transform: (t) => `{ ${t} }`
+      },
+
+      // Style 13 – Double parenthesis wrap
+      {
+        name: "13",
+        transform: (t) => `((${t}))`
+      },
+
+      // Style 14 – Soft hearts spacing (cute and flowing)
+      {
+        name: "14",
+        transform: (t) => [...t].join(' 💕 ')
+      },
+
+      // Style 15 – Script vibe with mirrored sides
+      {
+        name: "15",
+        transform: (t) => `𓆩 ${t} 𓆪`
+      },
+
+      // Style 16 – Diamond points
+      {
+        name: "16",
+        transform: (t) => `♦ ${t} ♦`
+      },
+
+      // Style 17 – Arrows wrap (minimal yet elegant)
+      {
+        name: "17",
+        transform: (t) => `➤ ${t} ➤`
+      },
+
+      // Style 18 – Feathered marks (left and right)
+      {
+        name: "18",
+        transform: (t) => `ꕥ ${t} ꕥ`
+      },
+
+      // Style 19 – Vine-like slashes
+      {
+        name: "19",
+        transform: (t) => `╰${t}╯`
+      },
+
+      // Style 20 – Elegant swan framing
+      {
+        name: "20",
+        transform: (t) => `༺ ${t} ༻`
+      },
+
+
+
+    ];
+
+
+    function updatePreview() {
+      const input = document.getElementById("userInput").value || "cursivefonts";
+      const container = document.getElementById("previewList");
+      container.innerHTML = "";
+
+      fontStyles.forEach(({ name, transform }) => {
+        const transformed = transform(input);
+        const row = document.createElement("div");
+        row.className = "flex flex-col sm:flex-row justify-between items-start sm:items-center bg-white rounded-xl shadow px-4 py-3 gap-3 sm:gap-6";
+
+        const preview = document.createElement("div");
+        preview.className = "text-base sm:text-lg break-words max-w-full flex-1 font-mono";
+        preview.textContent = transformed;
+
+        const btn = document.createElement("button");
+        btn.className = "text-sm bg-blue-600 hover:bg-blue-700 text-white px-4 py-1.5 rounded-lg transition";
+        btn.textContent = "Copy";
+        btn.onclick = () => {
+          navigator.clipboard.writeText(transformed);
+          btn.textContent = "Copied!";
+          setTimeout(() => (btn.textContent = "Copy"), 1500);
+        };
+
+        row.append(preview, btn);
+        container.appendChild(row);
+      });
+    }
+
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+
+    updatePreview();
+  </script>
+</body>
+
+</html>

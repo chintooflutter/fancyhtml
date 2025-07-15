@@ -5,20 +5,41 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cute Fonts Generator 2025, 30+ Free Styles</title>
-  <meta name="description" content="Try our free Cute Fonts Generator 2025 with 20+ adorable styles. Copy and paste cute fonts for Instagram, TikTok, or anywhere you want stylish text!">
+  <meta name="description" content="Try our free Cute Fonts Generator 2025 with 30+ adorable styles. Copy and paste cute fonts for Instagram, TikTok, or anywhere you want stylish text!">
   <meta name="keywords" content="cute fonts, cute font, cute font generator, cute fonts copy and paste, fonts cute, cute text styles, cute instagram fonts">
   <link rel="canonical" href="https://cutefonts.fancyletters.org/" />
   <link rel="icon" type="image/x-icon" href="https://www.fancyletters.org/assets/favicon.ico" />
-  <link rel="stylesheet" href="https://www.fancyletters.org/assets/style.css" />
- 
 
-  <!-- Preload Google Fonts -->
+  <!-- Preconnect and preload fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <noscript>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
   </noscript>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="https://www.fancyletters.org/assets/style.css" />
+
+  <style>
+    h1 {
+      font-family: "Sora", system-ui, sans-serif;
+      font-weight: 700;
+      font-display: swap;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
 </head>
 
 <body class="bg-pink-50 text-gray-800">
@@ -37,8 +58,8 @@
           <a href="https://www.fancyletters.org/contact/" class="text-gray-600 hover:text-black text-sm">Contact</a>
         </nav>
         <div class="md:hidden">
-          <button id="menu-toggle" class="text-gray-600 hover:text-black focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <button id="menu-toggle" aria-label="Toggle menu" class="text-gray-600 hover:text-black focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
@@ -51,12 +72,6 @@
       <a href="https://www.fancyletters.org/contact/" class="block text-gray-600 hover:text-black text-sm">Contact</a>
     </nav>
   </header>
-
-  <script>
-    document.getElementById("menu-toggle").addEventListener("click", function () {
-      document.getElementById("mobile-menu").classList.toggle("hidden");
-    });
-  </script>
 
   <main class="max-w-3xl mx-auto px-4 py-8">
     <h1 class="text-3xl sm:text-4xl font-bold text-center mb-4">Cute Fonts Generator 2025, 30+ Free Styles</h1>
@@ -97,6 +112,10 @@
   </footer>
 
   <script>
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+
     const fontStyles = [
       { name: "1", transform: (t) => `♡ ${t} ♡` },
       { name: "2", transform: (t) => `UwU ${t}` },
