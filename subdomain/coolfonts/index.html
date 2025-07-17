@@ -4,45 +4,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cute Fonts Generator 2025, 30+ Free Styles</title>
-  <meta name="description" content="Try our free Cute Fonts Generator 2025 with 30+ adorable styles. Copy and paste cute fonts for Instagram, TikTok, or anywhere you want stylish text!">
-  <meta name="keywords" content="cute fonts, cute font, cute font generator, cute fonts copy and paste, fonts cute, cute text styles, cute instagram fonts">
-  <link rel="canonical" href="https://cutefonts.fancyletters.org/" />
+  <title>Cool Font Generator 2025, Fonts Copy and Paste</title>
+  <meta name="description" content="Generate unique and stylish cool fonts for free using our Cool Fonts Generator 2025. Transform your text into eye-catching designs instantly.">
+  <meta name="keywords" content="cool fonts, cool font generator, stylish text generator, unique fonts, fancy text, free cool fonts">
+  <link rel="canonical" href="https://coolfonts.fancyletters.org/" />
   <link rel="icon" type="image/x-icon" href="https://www.fancyletters.org/assets/favicon.ico" />
-
-  <!-- Preconnect and preload fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <noscript>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
-  </noscript>
-
-  <!-- Main CSS -->
+  <link rel="preload" as="style" href="https://www.fancyletters.org/assets/style.css" />
   <link rel="stylesheet" href="https://www.fancyletters.org/assets/style.css" />
-
-  <style>
-    h1 {
-      font-family: "Sora", system-ui, sans-serif;
-      font-weight: 700;
-      font-display: swap;
-    }
-
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-pink-50 text-gray-800">
+<body class="bg-white text-gray-800">
   <header class="bg-white shadow sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
@@ -58,8 +30,9 @@
           <a href="https://www.fancyletters.org/contact/" class="text-gray-600 hover:text-black text-sm">Contact</a>
         </nav>
         <div class="md:hidden">
-          <button id="menu-toggle" aria-label="Toggle menu" class="text-gray-600 hover:text-black focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <button id="menu-toggle" aria-label="Toggle mobile menu"
+            class="text-gray-600 hover:text-black focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
@@ -74,19 +47,18 @@
   </header>
 
   <main class="max-w-3xl mx-auto px-4 py-8">
-    <h1 class="text-3xl sm:text-4xl font-bold text-center mb-4">Cute Fonts Generator 2025, 30+ Free Styles</h1>
+    <h1 class="text-3xl sm:text-4xl font-bold text-center mb-4">Cool Font Generator 2025, Fonts Copy and Paste</h1>
     <p class="text-center text-base sm:text-lg text-gray-600 mb-8">
-      Type something adorable! 30+ cute styles below 💖
+      Instantly generate cool, stylish fonts and text styles below.
     </p>
     <div class="mb-8">
-      <input type="text" id="userInput" placeholder="Enter cute text..."
-        class="w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-pink-400 focus:outline-none text-base sm:text-lg"
+      <input type="text" id="userInput" placeholder="Type your cool text..."
+        class="w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-gray-600 focus:outline-none text-base sm:text-lg"
         oninput="updatePreview()" />
     </div>
     <div id="previewList" class="space-y-4"></div>
   </main>
 
-  <!-- ✅ FOOTER -->
   <footer class="bg-gray-100 mt-12 p-6 text-sm text-gray-600">
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
       <div>
@@ -113,67 +85,67 @@
       </div>
     </div>
   </footer>
-  
 
   <script>
     const fontStyles = [
-      { name: "1", transform: (t) => `♡ ${t} ♡` },
-      { name: "2", transform: (t) => `UwU ${t}` },
-      { name: "3", transform: (t) => t.replace(/[aeiou]/gi, m => m.toUpperCase()) + " 💖" },
-      { name: "4", transform: (t) => `✿ ${t.split('').join(' ✿ ')} ✿` },
-      { name: "5", transform: (t) => [...t].map(c => `${c}̾`).join('') },
-      { name: "6", transform: (t) => `🌸${t}🌸` },
-      { name: "7", transform: (t) => `꒰ ${t} ꒱` },
-      { name: "8", transform: (t) => `*~ ${t} ~*` },
-      { name: "9", transform: (t) => `❥ ${t}` },
-      { name: "10", transform: (t) => `♥${t.split('').join('♥')}♥` },
-      { name: "11", transform: (t) => t.toLowerCase() + " ✧" },
-      { name: "12", transform: (t) => t.split('').reverse().join('') + " ♪" },
-      { name: "13", transform: (t) => `🐻 ${t} 🐻` },
-      { name: "14", transform: (t) => `⸝⸝ ${t} ⸝⸝` },
-      { name: "15", transform: (t) => [...t].map(c => c + '͎').join('') },
-      { name: "16", transform: (t) => `💗 ${t.toUpperCase()} 💗` },
-      { name: "17", transform: (t) => `❣️ ${t} ❣️` },
-      { name: "18", transform: (t) => `꧁${t}꧂` },
-      { name: "19", transform: (t) => `🎀 ${t} 🎀` },
-      { name: "20", transform: (t) => `🍓${t.split('').join(' ')}🍓` }
+      { name: "Cool 1", transform: (t) => `✧･ﾟ${t}･ﾟ✧` },
+      { name: "Cool 2", transform: (t) => `『 ${t.toUpperCase()} 』` },
+      { name: "Cool 3", transform: (t) => `☾ ${t.split('').join(' ')} ☽` },
+      { name: "Cool 4", transform: (t) => `⧼ ${t} ⧽` },
+      { name: "Cool 5", transform: (t) => `➵ ${t.toLowerCase()} ➵` },
+      { name: "Cool 6", transform: (t) => `꧁༺ ${t} ༻꧂` },
+      { name: "Cool 7", transform: (t) => `🄬 ${t.toUpperCase()} 🄬` },
+      { name: "Cool 8", transform: (t) => `≻${t.split('').join('≺≻')}≺` },
+      { name: "Cool 9", transform: (t) => `♛ ${t} ♛` },
+      { name: "Cool 10", transform: (t) => `✿ ${t.toLowerCase()} ✿` },
+      { name: "Cool 11", transform: (t) => `𖤐 ${t.split('').reverse().join('')} 𖤐` },
+      { name: "Cool 12", transform: (t) => `${t}` },
+      { name: "Cool 13", transform: (t) => `⟆ ${t.toUpperCase()} ⟆` },
+      { name: "Cool 14", transform: (t) => `⸻ ${t.split('').join('⸻')} ⸻` },
+      { name: "Cool 15", transform: (t) => `✦${t}✦` },
+      { name: "Cool 16", transform: (t) => `⫷ ${t} ⫸` },
+      { name: "Cool 17", transform: (t) => `⚡${t.toUpperCase()}⚡` },
+      { name: "Cool 18", transform: (t) => `✘ ${t.split('').join('✘')} ✘` },
+      { name: "Cool 19", transform: (t) => `⌬ ${t} ⌬` },
+      { name: "Cool 20", transform: (t) => `★⋆ ${t} ⋆★` },
     ];
-
+  
     function updatePreview() {
-      const input = document.getElementById("userInput").value || "cutefonts";
+      const input = document.getElementById("userInput").value || "coolfonts";
       const container = document.getElementById("previewList");
       container.innerHTML = "";
-
+  
       fontStyles.forEach(({ name, transform }) => {
         const transformed = transform(input);
-
+  
         const row = document.createElement("div");
         row.className = "flex flex-col sm:flex-row justify-between items-start sm:items-center bg-white rounded-xl shadow px-4 py-3 gap-3 sm:gap-6";
-
+  
         const preview = document.createElement("div");
         preview.className = "text-base sm:text-lg break-words max-w-full flex-1 font-mono";
         preview.textContent = transformed;
-
+  
         const btn = document.createElement("button");
-        btn.className = "text-sm bg-pink-500 hover:bg-pink-600 text-white px-4 py-1.5 rounded-lg transition";
+        btn.className = "text-sm bg-gray-800 hover:bg-black text-white px-4 py-1.5 rounded-lg transition";
         btn.textContent = "Copy";
         btn.onclick = () => {
           navigator.clipboard.writeText(transformed);
           btn.textContent = "Copied!";
           setTimeout(() => (btn.textContent = "Copy"), 1500);
         };
-
+  
         row.append(preview, btn);
         container.appendChild(row);
       });
     }
-
-    document.getElementById("menu-toggle").addEventListener("click", function () {
+  
+    document.getElementById("menu-toggle").addEventListener("click", () => {
       document.getElementById("mobile-menu").classList.toggle("hidden");
     });
-    
+  
     updatePreview();
   </script>
+
 </body>
 
 </html>
