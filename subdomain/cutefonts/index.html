@@ -9,6 +9,7 @@
     content="Try our free Cute Fonts Generator 2025 with 30+ adorable styles. Copy and paste cute fonts for Instagram, TikTok, or anywhere you want stylish text!">
   <meta name="keywords"
     content="cute fonts, cute font, cute font generator, cute fonts copy and paste, fonts cute, cute text styles, cute instagram fonts">
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
   <link rel="canonical" href="https://cutefonts.fancyletters.org/" />
   <link rel="icon" type="image/x-icon" href="https://www.fancyletters.org/assets/favicon.ico" />
 
@@ -84,11 +85,21 @@
       Type something adorable! 30+ cute styles below 💖
     </p>
     <div class="mb-8">
-      <input type="text" id="userInput" placeholder="Enter cute text..."
+      <textarea id="userInput" 
+        placeholder="Type your text..."
+        rows="3"
         class="w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-pink-400 focus:outline-none text-base sm:text-lg"
-        oninput="updatePreview()" />
+        oninput="updatePreview()"></textarea>
     </div>
     <div id="previewList" class="space-y-4"></div>
+
+    <!-- Next Page Button -->
+    <div class="mt-6 flex justify-center">
+      <a href="https://fontgenerator.fancyletters.org"
+        class="text-sm bg-pink-500 hover:bg-pink-600 text-white px-4 py-1.5 rounded-lg transition">
+        Next →
+      </a>
+    </div>
 
     <section class="max-w-3xl mx-auto px-4 py-10 text-gray-800 space-y-10">
 

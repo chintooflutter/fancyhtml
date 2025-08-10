@@ -9,6 +9,7 @@
     content="Create stylish bubble letters with Bubble Letters Generator 2025. Instantly copy and paste text in bubble font for Instagram, TikTok, and more!">
   <meta name="keywords"
     content="bubble letters, bubble text generator, playful fonts, copy bubble letters, bubble font styles">
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
   <link rel="canonical" href="https://bubbleletters.fancyletters.org/" />
   <link rel="icon" href="https://www.fancyletters.org/assets/favicon.ico" />
   <link rel="preload" as="style" href="https://www.fancyletters.org/assets/style.css" />
@@ -54,13 +55,23 @@
       Create cute bubble letters! Type your text and copy your favorite bubbly style below.
     </p>
     <div class="mb-8">
-      <input type="text" id="userInput" placeholder="Type your text..."
-        class="w-full px-4 py-3 border rounded-xl shadow-sm focus:ring-2 focus:ring-blue-400 text-base sm:text-lg"
-        oninput="updatePreview()" />
+      <textarea id="userInput" 
+        placeholder="Type your text..."
+        rows="3"
+        class="w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-pink-400 focus:outline-none text-base sm:text-lg"
+        oninput="updatePreview()"></textarea>
     </div>
 
     <div id="previewList" class="space-y-4"></div>
 
+
+    <!-- Next Page Button -->
+    <div class="mt-6 flex justify-center">
+      <a href="https://tattoofonts.fancyletters.org"
+        class="text-sm bg-pink-500 hover:bg-pink-600 text-white px-4 py-1.5 rounded-lg transition">
+        Next →
+      </a>
+    </div>
 
 
     <section class="max-w-3xl mx-auto px-4 py-10 text-gray-800 space-y-12 text-base leading-relaxed">
