@@ -1,8 +1,5 @@
 User-agent: *
 Allow: /
 
-# Disallow 
-Disallow: /subdomain/
-
 
 Sitemap: https://www.fancyletters.org/sitemap.xml

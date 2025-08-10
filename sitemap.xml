@@ -32,37 +32,47 @@
     <priority>0.8</priority>
   </url> 
   <url>
-    <loc>https://cutefonts.fancyletters.org/</loc>
+    <loc>https://www.fancyletters.org/different-fonts/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+     <url>
+    <loc>https://www.fancyletters.org/small-text-generator/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tattoofonts.fancyletters.org/</loc>
+    <loc>https://cutefonts.fancyletters.org</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cursivefonts.fancyletters.org/</loc>
+    <loc>https://tattoofonts.fancyletters.org</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://coolfonts.fancyletters.org/</loc>
+    <loc>https://cursivefonts.fancyletters.org</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fontchanger.fancyletters.org/</loc>
+    <loc>https://coolfonts.fancyletters.org</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bubbleletters.fancyletters.org/</loc>
+    <loc>https://fontchanger.fancyletters.org</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fontgenerator.fancyletters.org/</loc>
+    <loc>https://bubbleletters.fancyletters.org</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fontgenerator.fancyletters.org</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
